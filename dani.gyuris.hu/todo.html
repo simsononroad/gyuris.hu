@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+<body>
+    <div class="center-div">
+        <input type="checkbox" name="" id="" class="becheck" checked checked>Gopro
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked checked>Akkumulátor
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked checked>Töltő
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>tok
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>Csavarok
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>tripod
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>állvány
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>doboz
+        </div>
+        
+    </div>
+    <div class="center-div">
+        <input type="checkbox" name="" id="" class="becheck" checked>Telefon
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>töltő
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>töltő block
+        </div>
+    </div>
+    <div class="center-div">
+        <input type="checkbox" name="" id="" class="becheck" checked>Laptop (thinkpad/DELL)
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>billenytyűzet
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>Töltő
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>Egér
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>HDD
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>webcam
+        </div>
+    </div>
+    <div class="center-div">
+        <input type="checkbox" name="" id="" class="becheck" checked>Kábelek
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>HDMI
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>WGA
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>USB-C
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>micro-USB
+        </div>
+        
+    </div>
+    <div class="center-div">
+        <input type="checkbox" name="" id="" class="becheck" checked>Órák
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>Casio
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>pine
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>töltő
+        </div>
+        
+    </div>
+    <div class="center-div">
+        <input type="checkbox" name="" id="" class="becheck" checked>Egyéb
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>Hangfal
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>powerbank
+        </div>
+        <br>
+        <div class="center-div">
+            <input type="checkbox" name="" id="" class="becheck" checked>---
+        </div>
+        
+    </div>
+</body>
+</html>
+
+
+
+<style>
+    .center-div{
+        width: 90%;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+        color: blue;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        border: 2px solid blue;
+        position: relative;
+        left: 20px;
+        top: 0px;
+        bottom: 0px;
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        input[type="checkbox"]:checked + label{
+            background-color: green;
+            color: white;
+        }
+
+        label{
+            display: inline-block;
+            padding: 5px 10px;
+        }
+        input[type="checkbox"]:checked + label::after{
+            content: "\2714";
+            color: white;
+        }
+        input[type="checkbox"]:checked + label::before{
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: 40rem;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+
+    }
+    .becheck {
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        left: 5px;
+    }
+</style>

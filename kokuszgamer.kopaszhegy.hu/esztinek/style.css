@@ -1,0 +1,37 @@
+.menu{
+    background-color: gray;
+    width: fit-content;
+    height:300px;
+    border-radius: 10px;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 5px;
+    backface-visibility: hidden;
+
+}
+a{
+    color: white;
+    padding-right: 10px;
+    font-size: larger;
+    font-style: normal;
+    text-decoration: none;
+    justify-content: center;
+}
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("blurry-gradient-haikei.png");
+    background-size: 100%;
+
+}
+
+.fo{
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    padding-left: 4px;
+    font-size: x-large;
+    font-weight: bold;
+}

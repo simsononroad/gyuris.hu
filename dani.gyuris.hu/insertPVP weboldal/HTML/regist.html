@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>InsectPVP</title>
+        <link rel="shortcut icon" type="image/jpg" href="../IMAGES/fii.png"/>
+        <link rel="stylesheet" href="..\CSS\style.css">
+        <script src="..\JS\main.js"></script>
+        <title>InsectPVP</title>
+        <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+        <style>
+          #inp1
+            {
+              display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="eml" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="psw">
+              <div>
+                <input type="text" name="" id="inp1">
+                <input type="text" name="" id="" placeholder="5+5">
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+                <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="sbm()">Submit</button>
+          </form>
+    </body>
+</html>
+

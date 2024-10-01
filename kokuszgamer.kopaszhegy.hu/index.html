@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simsonontheroad</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--<div class="link">
+    <a href="moto.html"><h1>Motorok</h1></a>
+    <a href="aloldalak/bejegyzesek.html"><h1>Bejegyzések</h1></a>
+  </div>-->
+  <div>
+    <form action="https://sheetdb.io/api/v1/dsjvzbf8f7jun" method="post" id="sheetdb-form">
+      <input type="text" placeholder="név" name="data[nev]">
+      <br>
+      <textarea type="text" name="data[ido]" id="datebe" placeholder="idő"></textarea>
+      <br>
+      <textarea name="data[uzenet]" id="" placeholder="Üzenet"></textarea>
+      <button type="submit" onclick="send()">Elküld</button>
+      <div id="var"></div>
+    </form>
+  </div>
+
+</body>
+
+</html>
+
+<script>
+  var form = document.getElementById("sheetdb-form")
+  form.addEventListener("submit", e => {
+    e.preventDefault()
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(response => response.json()).then((html) => {
+      widow.open("../index.html", '_blank');
+      alert("Sikeresen elküldve: üzenet: " + html)
+    })
+  })
+  let kiir = document.getElementById("var")
+  function send() {
+    var velemeny = document.getElementById("velemeny").value;
+    console.log("Elküldés megtörtént!");
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    kiir.innerHTML = "A Feltöltés megtörtént kérlek várj!<br>Üzenet: " + velemeny;
+    sleep(2000).then(() => { location.reload(); });
+  }
+  const now = new Date();
+
+  const year = now.getFullYear();    // Év
+  const month = now.getMonth() + 1;  // Hónap (0-indexelt, ezért hozzáadunk 1-et)
+  const day = now.getDate();         // Nap
+
+  const hours = now.getHours();      // Óra
+  const minutes = now.getMinutes();  // Perc
+  const seconds = now.getSeconds();  // Másodperc
+
+  console.log(`Dátum: ${year}-${month}-${day}`);
+  var datebe = document.getElementById("datebe").innerHTML = year + "-" + month + "-" + day + "||" + hours + "-" + minutes + "-" + seconds;
+</script>
+
+<style>
+  html{
+    background-image: url("aloldalak/blurry-gradient-haikei.png");
+  }
+</style>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohm törvénye</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://imgs.search.brave.com/HkfQvRgw9B473rmgzlqQplXwXl1J1sqp76WeqhI7s5s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/aWNvbnNkYi5jb20v/aWNvbnMvcHJldmll/dy93aGl0ZS9yZXNp/c3Rvci14eGwucG5n">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!--<h1 style="color: red;">Figyelem! Az oldal frissítés alatt. <br> Elképzelhető hogy ha frissíti a weboldalt egyes
+        elemek eltűnnek vagy megváltoznak.</h1>-->
+    
+    <div>Üdv!</div>
+    <br>
+    <div>Ez az alkalmazás az Ohm törvényét mutatja be.</div>
+    <br>
+    <div>Az Ohm törvénye: R = U / I.</div>
+    <br>
+    <div>Vagyis: Ellenállás = Feszültség / Áramerősség</div>
+    <br>
+    <div>Használata: -Amelyik mennyiséget keresed azt a mezőt hagyd üresen</div>
+    <br>
+    <br>
+    <div class="inps">
+        Feszültség:
+        <br>
+        <input type="number" id="u" placeholder="V">
+        <br>
+        <br>
+        Áramerősség:
+        <br>
+        <input type="number" id="i" placeholder="A">
+        <br>
+        <br>
+        Ellenállás:
+        <br>
+        <input type="number" id="r" placeholder="Ω">
+        <br>
+        <br>
+        <button onclick="szamolas()">Számol</button>
+    </div>
+    <br>
+    <div style="font-size: 35px;" class="pluser"><span
+            style="size: 10px; width: auto; font-size: 35px; text-decoration: underline;">Feszültség:</span> <span
+            class="feszultseg"></span> V</div>
+    <div style="font-size: 35px;" class="pluser"><span
+            style="size: 10px; width: auto; font-size: 35px; text-decoration: underline;">Áramerősség:</span> <span
+            class="aramerosseg"></span> A</div>
+    <div style="font-size: 35px;" class="pluser"><span
+            style="size: 10px; width: auto; font-size: 35px; text-decoration: underline;">Ellenállás:</span> <span
+            class="ellenallas"></span> Ω</div>
+    <br>
+    <br>
+    <br>
+
+    created by: Gyuris Dániel
+    <br>
+    3.5 verzió
+    <img src="https://imgs.search.brave.com/GoW0j3ntnIQdxFd5QpeimijarZ-0K-iMTA8U8ThU5TY/rs:fit:560:320:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2QzL0Vtb2ppb25l/MV8wMEE5LnN2Zw.svg"
+        alt="" width="10px">
+</body>
+
+</html>
+
+
+
+<script>
+
+
+
+
+    /*alert("Üdv! \n Ez az alkalmazás az Ohm törvényét mutatja be. \n Az Ohm törvénye: R = U / I");
+    alert("használata: \n      -Amelyik mennyiséget keresed azt a mezőt hagyd üresen");
+
+    var u = prompt("Feszültség (szám): ");
+    var i = prompt("Áramerősség (szám): ");
+    var r = prompt("Ellenállás értéke (szám): ");
+
+    if(u == ""){
+        var u = r*i
+    }
+    if (i == ""){
+        var i = u/r;
+    }
+    if (r == ""){
+        var r = u/i
+    }
+    alert("Feszültség: " +u + " V" + "\n" + "Áramerősség: " + i + " A" + "\n" + "Ellenállás: " + r + " Ω")
+    alert("Készítette: Gyuris Dániel")*/
+
+</script>

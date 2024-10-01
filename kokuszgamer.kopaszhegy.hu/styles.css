@@ -1,0 +1,55 @@
+a{
+  text-decoration: underline;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: green;
+  width: 30px;
+}
+.t2{
+  background-color: #2E313F;
+  color: white;
+  width: 500px;
+  border: 3px blue dotted;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.t4{
+  background-color: #2E313F;
+  color: white;
+  width: 500px;
+  border: 3px blue dotted;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.t2 h1{
+  color: lightblue;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.t4 h1{
+  color: lightblue;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.p1 a{
+  color: white;
+}
+.link{
+  margin-right: 1777px;
+}
+.elony{
+  background-color: lightgreen;
+}
+.hatrany{
+  background-color: lightcoral;
+}
+.imgs{
+  width: auto;
+}
