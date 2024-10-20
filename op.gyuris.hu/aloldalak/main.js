@@ -13,7 +13,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
 
+function element(){
+	const element_btn = document.getElementsByClassName('element-button')[0]
+	const element_btn_del = document.getElementsByClassName('element-button-del')[0]
+	element_btn.classList.toggle('active')
+	element_btn_del.classList.toggle('active')
+	var text = document.getElementById("element-text").innerHTML="Felhasználónév: @dani:oregpreshaz.eu"
+}
 
-
-
-
+function element_del(){
+	const element_btn = document.getElementsByClassName('element-button')[0]
+	const element_btn_del = document.getElementsByClassName('element-button-del')[0]
+	element_btn.classList.toggle('active')
+	element_btn_del.classList.toggle('active')
+	var text = document.getElementById("element-text").innerHTML=""
+}
